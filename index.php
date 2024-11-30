@@ -28,12 +28,9 @@
    .display-tv {
 
       position: absolute;
-
-      width: 100%;
-
-      height: 80%;
-
-      z-index: 2;
+    width: 490px;
+    height: 95%;
+    z-index: 2;
 
    }
 
@@ -41,12 +38,12 @@
 
    .display-video {
       position: absolute;
-      width: 87%;
-      height: 70%;
-      top: 3px;
-      left: 44px;
-      object-fit: cover;
-      z-index: 1;
+    width: 76%;
+    height: 67%;
+    top: 23px;
+    left: 85px;
+    object-fit: cover;
+    z-index: 1;
    }
 
 
@@ -168,9 +165,11 @@
       -webkit-box-shadow: none;
 
       box-shadow: none;
+      text-align: center;
 
    }
-   .buy-btn2{
+
+   .buy-btn2 {
       padding: 12px 32px !important;
 
       font-size: 15px;
@@ -200,9 +199,11 @@
       -webkit-box-shadow: none;
 
       box-shadow: none;
+      border: 1px solid #51afb7;
+      text-align: center;
    }
 
-   .buy-btn2:hover{
+   .buy-btn2:hover {
       border: 1px solid #51afb7;
    }
 
@@ -312,27 +313,30 @@
 
       }
 
-      .swiper-button-next, .swiper-button-prev{
+      .swiper-button-next,
+      .swiper-button-prev {
          top: 30%;
       }
-      .swiper-button-prev{
-          left: 0;
-          right: auto;
+
+      .swiper-button-prev {
+         left: 0;
+         right: auto;
       }
-      .swiper-button-next{
+
+      .swiper-button-next {
          right: 0;
          left: auto;
       }
 
-      .pad-top{
+      .pad-top {
          padding: 30px 0;
       }
    }
 
-   @media (max-width: 786px){
+   @media (max-width: 786px) {
       .minheight {
-    min-height: 150px;
-   }
+         min-height: 150px;
+      }
    }
 
 
@@ -364,7 +368,7 @@
 
       }
 
-      .pad-top{
+      .pad-top {
          padding: 30px 0;
       }
 
@@ -404,13 +408,13 @@
    }
 
    .stick-tv {
-      width: 200px;
+      width: 250px;
    }
 
-   .same_height {
+   /* .same_height {
       height: 597px;
       min-height: 400px;
-   }
+   } */
 
    .foot_img {
       width: 100%;
@@ -453,7 +457,7 @@
 
                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 
-                  data-y="['middle','middle','middle','middle']" data-voffset="['-140','-70','-70','-170']"
+                  data-y="['middle','middle','middle','middle']" data-voffset="['-155','-120','-70','-130']"
 
                   data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
 
@@ -467,7 +471,7 @@
 
                   style="z-index: 7;"><img src="images/tv-1.png" alt=""
 
-                     data-ww="['400px','400px','400px','300px']" data-hh="['300px','300px','300px','150px']"
+                     data-ww="['350px','350px','350px','200px']" data-hh="['250px','250px','250px','130px']"
 
                      width="1600" height="1600" data-no-retina=""> </div>
 
@@ -479,7 +483,7 @@
 
                   data-hoffset="['-45','-45','-45','-35']" data-y="['middle','middle','middle','middle']"
 
-                  data-voffset="['90','110','110','50']" data-width="none" data-height="none"
+                  data-voffset="['50','70','30','0']" data-width="none" data-height="none"
 
                   data-whitespace="nowrap" data-type="text" data-beforeafter="before" data-responsive_offset="on"
 
@@ -611,7 +615,7 @@
 
                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 
-                  data-y="['middle','middle','middle','middle']" data-voffset="['-140','-70','-70','-170']"
+                  data-y="['middle','middle','middle','middle']" data-voffset="['-155','-120','-70','-130']"
 
                   data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
 
@@ -625,7 +629,7 @@
 
                   style="z-index: 15;"><img src="images/tv-2.png" alt=""
 
-                     data-ww="['400px','400px','400px','300px']" data-hh="['300px','300px','300px','150px']"
+                     data-ww="['350px','350px','350px','200px']" data-hh="['250px','250px','250px','130px']"
 
                      width="1600" height="1600" data-no-retina=""> </div>
 
@@ -643,7 +647,7 @@
 
                   data-hoffset="['-45','-45','-45','-35']" data-y="['middle','middle','middle','middle']"
 
-                  data-voffset="['90','110','110','50']" data-width="none" data-height="none"
+                 data-voffset="['50','70','30','0']" data-width="none" data-height="none"
 
                   data-whitespace="nowrap" data-type="text" data-beforeafter="after" data-responsive_offset="on"
 
@@ -735,7 +739,7 @@
 
                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 
-                  data-y="['center','center','middle','middle']" data-voffset="['10','-70','-70','-170']"
+                  data-y="['center','center','middle','middle']" data-voffset="['10','-70','-70','-0']"
 
                   data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
 
@@ -749,7 +753,7 @@
 
                   style="z-index: 7;"><img src="images/tvv.png" alt=""
 
-                     data-ww="['500px','500px','500px','300px']" data-hh="['300px','300px','300px','150px']"
+                    data-ww="['450px','450px','450px','250px']" data-hh="['300px','300px','300px','150px']"
 
                      width="1600" height="1600" data-no-retina=""> </div>
 
@@ -895,7 +899,7 @@
 
                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 
-                  data-y="['center','center','middle','middle']" data-voffset="['10','-70','-70','-170']"
+                  data-y="['center','center','middle','middle']" data-voffset="['10','-70','-70','-0']"
 
                   data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
 
@@ -909,7 +913,7 @@
 
                   style="z-index: 15;"><img src="images/tvv.png" alt=""
 
-                     data-ww="['500px','500px','500px','300px']" data-hh="['300px','300px','300px','150px']"
+                     data-ww="['450px','450px','450px','250px']" data-hh="['300px','300px','300px','150px']"
 
                      width="1600" height="1600" data-no-retina=""> </div>
 
@@ -1317,6 +1321,59 @@
 
             <div class="swiper-wrapper">
 
+            <div class="swiper-slide">
+
+                  <div class="about-company-slide">
+
+                     <div class="row">
+
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2">
+
+                           <div class="about-slider-image-section clearfix position-relative">
+
+                              <div class="about-slider-images-section-inner">
+
+                                 <img src="images/about-4.jpg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn">
+
+                              </div>
+
+                              <div class="about-img-gradient-box gradient-bg-pink-purple" data-slide="animated" data-animate="zoomIn"></div>
+
+                           </div>
+
+                        </div>
+
+                        <div class="col-lg-6 vertical-align-about-caption">
+
+                           <div class="about-slider-img-detail" data-slide="animated" data-animate="fadeInRight">
+
+                              <p class="text-color-secondary paragraph-20 fontface-two padding-bottom-25">Real-Time Insights</p>
+
+                              <h2 class="fontface-one text-color-dark padding-bottom-35">Instant Results, Track Progress</h2>
+
+                              <p class="text-color-dark paragraph-15 padding-bottom-35 text-color-darkgrey">
+
+                                 OPTIC CHART &#174; offers real-time insights and progress tracking, allowing patients and practitioners to monitor eye health over time. Immediate results help inform decisions quickly, while the tracking feature keeps a record of past tests. This empowers users with ongoing knowledge of their eye health status for improved outcomes.</p>
+
+                              <p class="text-color-dark paragraph-15 padding-bottom-45 text-color-darkgrey">
+
+                                 Real-time results and tracking empower users with instant insights. OPTIC CHART &#174; enables ongoing monitoring, helping maintain consistent eye health for better long-term vision care.</p>
+
+                              <!-- <a href="#." class="button-setting background-secondary text-color-white button-setting-primary">
+
+                                 Learn More</a> -->
+
+                           </div>
+
+                        </div>
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+
                <div class="swiper-slide">
 
                   <div class="about-company-slide">
@@ -1353,7 +1410,7 @@
 
                               <p class="text-color-dark paragraph-15 padding-bottom-45 text-color-darkgrey">
 
-                                 With OPTIC CHART 	&#174;, users gain access to thorough eye health checks. Its variety of tests quickly identifies potential vision issues, supporting early detection and proactive care for optimal eye health.</p>
+                                 With OPTIC CHART &#174;, users gain access to thorough eye health checks. Its variety of tests quickly identifies potential vision issues, supporting early detection and proactive care for optimal eye health.</p>
 
                               <!-- <a href="#." class="button-setting background-primary text-color-white button-setting-secondary"> Learn More </a> -->
 
@@ -1405,7 +1462,7 @@
 
                               <p class="text-color-dark paragraph-15 padding-bottom-45 text-color-darkgrey">
 
-                                 OPTIC CHART’s 	&#174; adaptable testing methods ensure precise assessments. Its versatile test options, from standard to specialized, allow individualized care and effective monitoring of patients’ vision health.</p>
+                                 OPTIC CHART’s &#174; adaptable testing methods ensure precise assessments. Its versatile test options, from standard to specialized, allow individualized care and effective monitoring of patients’ vision health.</p>
 
                               <!-- <a href="#." class="button-setting background-secondary text-color-white button-setting-primary">Learn More </a> -->
 
@@ -1453,67 +1510,13 @@
 
                               <p class="text-color-dark paragraph-15 padding-bottom-35 text-color-darkgrey">
 
-                                 OPTIC CHART 	&#174; is designed to be both user-friendly and clinically reliable. Its intuitive interface ensures that anyone, from eye care professionals to first-time users, can navigate it effortlessly. With clinical-grade accuracy, it delivers trustworthy results, making it an essential tool for modern eye testing in various settings.</p>
+                                 OPTIC CHART &#174; is designed to be both user-friendly and clinically reliable. Its intuitive interface ensures that anyone, from eye care professionals to first-time users, can navigate it effortlessly. With clinical-grade accuracy, it delivers trustworthy results, making it an essential tool for modern eye testing in various settings.</p>
 
                               <p class="text-color-dark paragraph-15 padding-bottom-45 text-color-darkgrey">
 
-                                 OPTIC CHART 	&#174; combines ease of use with clinical precision, providing accurate results. Its intuitive design suits professionals and individuals, ensuring reliable eye testing for everyone.</p>
+                                 OPTIC CHART &#174; combines ease of use with clinical precision, providing accurate results. Its intuitive design suits professionals and individuals, ensuring reliable eye testing for everyone.</p>
 
                               <!-- <a href="#." class="button-setting background-primary text-color-white button-setting-secondary">Learn More </a> -->
-
-                           </div>
-
-                        </div>
-
-                     </div>
-
-                  </div>
-
-               </div>
-
-
-
-               <div class="swiper-slide">
-
-                  <div class="about-company-slide">
-
-                     <div class="row">
-
-                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2">
-
-                           <div class="about-slider-image-section clearfix position-relative">
-
-                              <div class="about-slider-images-section-inner">
-
-                                 <img src="images/about-4.jpg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn">
-
-                              </div>
-
-                              <div class="about-img-gradient-box gradient-bg-pink-purple" data-slide="animated" data-animate="zoomIn"></div>
-
-                           </div>
-
-                        </div>
-
-                        <div class="col-lg-6 vertical-align-about-caption">
-
-                           <div class="about-slider-img-detail" data-slide="animated" data-animate="fadeInRight">
-
-                              <p class="text-color-secondary paragraph-20 fontface-two padding-bottom-25">Real-Time Insights</p>
-
-                              <h2 class="fontface-one text-color-dark padding-bottom-35">Instant Results, Track Progress</h2>
-
-                              <p class="text-color-dark paragraph-15 padding-bottom-35 text-color-darkgrey">
-
-                                 OPTIC CHART	&#174; offers real-time insights and progress tracking, allowing patients and practitioners to monitor eye health over time. Immediate results help inform decisions quickly, while the tracking feature keeps a record of past tests. This empowers users with ongoing knowledge of their eye health status for improved outcomes.</p>
-
-                              <p class="text-color-dark paragraph-15 padding-bottom-45 text-color-darkgrey">
-
-                                 Real-time results and tracking empower users with instant insights. OPTIC CHART	&#174; enables ongoing monitoring, helping maintain consistent eye health for better long-term vision care.</p>
-
-                              <!-- <a href="#." class="button-setting background-secondary text-color-white button-setting-primary">
-
-                                 Learn More</a> -->
 
                            </div>
 
@@ -1555,7 +1558,7 @@
 
                            <p class="paragraph-14 text-color-darkgrey fontface-two padding-bottom-50">
 
-                              Watch our demo video to experience how Optic Chart	&#174; simplifies eye testing with intuitive tools and precise results.
+                              Watch our demo video to experience how Optic Chart &#174; simplifies eye testing with intuitive tools and precise results.
 
                            </p>
 
@@ -1615,7 +1618,7 @@
 
                            <p class="paragraph-14 text-color-darkgrey fontface-two padding-bottom-20">
 
-                              Get the OPTIC CHART	&#174; app today from the Play Store and unlock advanced eye testing tools right at your fingertips. Designed for precision and ease, our software ensures accurate diagnostics and seamless functionality for professionals. Download now and take the first step toward revolutionizing eye care!
+                              Get the OPTIC CHART &#174; app today from the Play Store and unlock advanced eye testing tools right at your fingertips. Designed for precision and ease, our software ensures accurate diagnostics and seamless functionality for professionals. Download now and take the first step toward revolutionizing eye care!
 
                            </p>
 
@@ -1666,11 +1669,11 @@
 
                               </h6>
 
-                              <img src="images/smart-tv.png" alt="" class="pb-3 stick-tv">
+                              <img src="images/setup-1.png" alt="" class="pb-3 stick-tv">
 
                               <p class="paragraph-14 text-color-darkgrey fontface-two padding-bottom-30 p-3 minheight">
 
-                                 <strong>Download Optic Chart	&#174; Apps:</strong> Most smart TVs come with built-in app stores where you can download OpticChart Ensure your TV is connected to the internet for Activate by License Key get it on the time of BUY.
+                                 <strong>Download Optic Chart &#174; Apps:</strong> Most smart TVs come with built-in app stores where you can download OpticChart Ensure your TV is connected to the internet for Activate by License Key get it on the time of BUY.
 
                               </p>
 
@@ -1692,7 +1695,7 @@
 
                               </h6>
 
-                              <img src="images/non-smart.png" alt="" class="pb-3 stick-tv">
+                              <img src="images/setup-2.png" alt="" class="pb-3 stick-tv">
 
                               <p class="paragraph-14 text-color-darkgrey fontface-two padding-bottom-30 p-3 minheight">
 
@@ -1718,7 +1721,7 @@
 
                               </h6>
 
-                              <img src="images/complete-kit.png" alt="" class="pb-3 stick-tv">
+                              <img src="images/setup-3.png" alt="" class="pb-3 stick-tv">
 
                               <p class="paragraph-14 text-color-darkgrey fontface-two padding-bottom-30 p-3 minheight">
 
@@ -1860,7 +1863,7 @@
 
                <h2 class="text-color-white fontface-one padding-bottom-35 wow fadeInLeft" data-wow-delay="350ms">Clear Vision, <span class="font-weight-700 ">Accurate Results</span></h2>
 
-               <p class="text-color-white fontface-two paragraph-23 padding-bottom-45 wow fadeInLeft" data-wow-delay="400ms">Optic Chart 	&#174; offers cutting-edge eye testing software designed to deliver accurate, efficient results for comprehensive vision assessments.</p>
+               <p class="text-color-white fontface-two paragraph-23 padding-bottom-45 wow fadeInLeft" data-wow-delay="400ms">Optic Chart &#174; offers cutting-edge eye testing software designed to deliver accurate, efficient results for comprehensive vision assessments.</p>
 
                <!-- <a href="#." class="button-setting background-white button-setting-primary text-color-dark wow fadeInLeft" data-wow-delay="400ms">Learn More</a> -->
 
@@ -2316,7 +2319,7 @@
 
                   <div class="stats-heading-detail text-right wow fadeInUp" data-wow-delay="350ms">
 
-                     <p class="paragraph-14 text-color-darkgrey fontface-two">Optic Chart 	&#174; brings accurate, affordable, and convenient eye diagnostics to any setting. Trusted by professionals, our validated system ensures reliable results for modern eye health assessments.</p>
+                     <p class="paragraph-14 text-color-darkgrey fontface-two">Optic Chart &#174; brings accurate, affordable, and convenient eye diagnostics to any setting. Trusted by professionals, our validated system ensures reliable results for modern eye health assessments.</p>
 
                   </div>
 
@@ -2359,7 +2362,7 @@
 
                            <div class="about-slider-images-section-inner exhibition-slider-images">
 
-                             <a href="https://optikamumbai.in/" target="_blank"> <img src="images/exhibition-1.jpg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn"></a>
+                              <a href="https://optikamumbai.in/" target="_blank"> <img src="images/exhibition-1.jpg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn"></a>
 
                            </div>
 
@@ -2407,7 +2410,7 @@
 
                            <div class="about-slider-images-section-inner exhibition-slider-images">
 
-                           <a href="https://2025.apaophth.org/" target="_blank"> <img src="images/exhibition-1.jpg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn"></a>
+                              <a href="https://2025.apaophth.org/" target="_blank"> <img src="images/exhibition-1.jpg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn"></a>
 
                            </div>
 
@@ -2419,7 +2422,7 @@
 
                      <div class="col-lg-6 vertical-align-about-caption">
 
-                     <div class="blog-inner-detail vertical-align-about-caption text-md-left text-center wow fadeInLeft" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">
+                        <div class="blog-inner-detail vertical-align-about-caption text-md-left text-center wow fadeInLeft" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">
                            <div class="blog-detail-text">
                               <h2 class="fontface-one text-color-dark"><a href="https://2025.apaophth.org/s" target="_blank">APAO / AIOC 2025</a>
                               </h2>
@@ -2427,9 +2430,9 @@
                                  <li><a href="javascript:void(0)"><i class="fa fa-calendar-alt"></i> 3rd - 6th April 2025</a></li>
                               </ul>
                               <p class="padding-bottom-20">The 40th Asia-Pacific Academy of Ophthalmology Congress
-                              In Conjunction with The 83rd Annual Conference of the All India Ophthalmological Society</p>
+                                 In Conjunction with The 83rd Annual Conference of the All India Ophthalmological Society</p>
                               <p class="paragraph-20 text-color-secondary fontface-one padding-bottom-35">Location : <span class="paragraph-14 text-color-darkgrey fontface-two">
-                                 Stall no - N17 & N18, NESCO, GAOREGAON EAST, MUMBAI
+                                    Stall no - N17 & N18, NESCO, GAOREGAON EAST, MUMBAI
                                  </span></p>
 
                               <a href="https://2025.apaophth.org/" target="_blank" class="buy-btn buy-btn2">View More</a>
@@ -2480,7 +2483,7 @@
 
                   <h2 class="fontface-one text-color-dark ">Connect with</h2>
 
-                  <h2 class="fontface-one text-color-dark"><span class="font-weight-700">Optic Chart 	&#174;<span class="text-color-secondary">.</span></span>
+                  <h2 class="fontface-one text-color-dark"><span class="font-weight-700">Optic Chart &#174;<span class="text-color-secondary">.</span></span>
 
                   </h2>
 
@@ -2488,7 +2491,7 @@
 
                <p class="paragraph-14 text-color-darkgrey fontface-two">
 
-                  Reach out to us for inquiries, support, or more information about Optic Chart’s	&#174; features and services.</p>
+                  Reach out to us for inquiries, support, or more information about Optic Chart’s &#174; features and services.</p>
 
                <div class="contact-detail-list">
 
@@ -2602,7 +2605,7 @@
 
                      <div class="col-md-12">
 
-                        <a class="button-setting button-setting-primary background-secondary text-color-white width-100 text-center" href="#.">Send Message</a>
+                        <a class="buy-btn buy-btn2 container-fluid" href="#.">Send Message</a>
 
                      </div>
 
