@@ -38,7 +38,7 @@
 
    .display-video {
       position: absolute;
-    width: 76%;
+    width: 63%;
     height: 67%;
     top: 23px;
     left: 85px;
@@ -233,6 +233,12 @@
 
    }
 
+   @media (max-width: 1200px){
+      .display-video{
+         width: 75%;
+      }
+   }
+
 
 
    @media (max-width: 990px) {
@@ -331,16 +337,39 @@
       .pad-top {
          padding: 30px 0;
       }
+      .display-tv {
+      position: absolute;
+      width: 100%;
+      height: 70%;
+      z-index: 2;
+      top: 18%;
+      }
+      .display-video{
+         width: 74%;
+         left: 45px;
+         height: 47%;
+    top: 84px;
+      }
    }
 
    @media (max-width: 786px) {
       .minheight {
          min-height: 150px;
       }
+      .display-video{
+         left: 65px;
+      }
    }
 
 
    @media (max-width: 576px) {
+      .display-tv {
+        position: absolute;
+        width: 350px;
+        height: 85%;
+        z-index: 2;
+        top: 18%;
+    }
 
       .main-display {
 
@@ -352,7 +381,10 @@
 
       .display-video {
 
-         left: 18px;
+         left: 24px;
+         width: 85%;
+         height: 57%;
+        top: 55px;
 
       }
 
@@ -1546,7 +1578,7 @@
 
                <div class="row align-items-center justify-content-center">
 
-                  <div class="col-lg-7 col-md-7 col-sm-12">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
 
                      <div class="blog-inner-detail vertical-align-about-caption text-md-left text-center wow fadeInLeft" data-wow-delay="300ms">
 
@@ -1570,7 +1602,7 @@
 
                   </div>
 
-                  <div class="main-display col-lg-5 col-md-5 col-sm-12">
+                  <div class="main-display col-lg-6 col-md-6 col-sm-12">
 
                      <video src="images/demo-video.mp4" alt="blog-picture" class="width-100 display-video" autoplay muted controls>
 
