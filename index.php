@@ -1485,7 +1485,7 @@
 
                               <div class="about-slider-images-section-inner">
 
-                                 <img src="images/about-4.jpeg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn">
+                                 <img src="images/about-4.jpg" alt="about-slider-image" data-slide="animated" data-animate="zoomIn">
 
                               </div>
 
