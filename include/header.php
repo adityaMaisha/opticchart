@@ -19,17 +19,17 @@
    <!-- Bootstrap CSS Files -->
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-   
+
    <!-- Animate CSS File -->
    <link rel="stylesheet" href="css/animate.css">
-   
+
    <!-- Font-Awesome CSS File -->
    <link rel="stylesheet" href="css/fontawesome-all.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-   
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
    <!-- Themify CSS File -->
    <link rel="stylesheet" href="css/themify-icons.css">
 
@@ -49,23 +49,67 @@
 
    <!-- Swiper CSS File -->
    <link rel="stylesheet" href="css/swiper.min.css">
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
    <!-- Custom Style CSS File -->
    <link rel="stylesheet" href="css/style.css">
 
    <style>
-      @media (max-width: 990px){
-         .padd_bot{
-         padding-bottom: 20px;
+      @media (max-width: 990px) {
+         .padd_bot {
+            padding-bottom: 20px;
+         }
       }
+
+      .header-cart-wrap_hny12 #google_translate_element .goog-te-gadget span {
+
+         display: none;
+
+      }
+
+      div#headerCartWrap {
+         position: relative;
+      }
+
+
+      .skiptranslate.goog-te-gadget>div {
+
+         position: absolute;
+
+         top: -4px;
+         left: 0px;
+      }
+
+
+
+      .goog-te-gadget .goog-te-combo {
+
+         margin: 0 !important;
+         background: #51afb7;
+         padding: 6px;
+         border: none;
+         border-radius: 5px;
+         color: #fff;
+         font-weight: 600;
+         font-size: 14px;
+
+      }
+
+      .skiptranslate iframe,
+      .VIpgJd-ZVi9od-ORHb {
+         display: none !important;
+      }
+
+      .ml-left {
+         margin-left: 40%;
       }
    </style>
-   
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" class="index-one">
 
-<!-- Page Loader -->
+   <!-- Page Loader -->
    <div class="preloader">
       <div class="loader-dot-outer">
          <div class="loader-dot-center"></div>
@@ -78,11 +122,11 @@
       </div>
    </div>
    <!-- Page Loader -->
-   
+
 
    <!-- Page Wrapper -->
    <section class="page-wrapper">
-     
+
       <!-- Header Section Starts -->
       <header class="site-header">
          <nav class="navbar navbar-expand-lg center-brand navbar-transparent-white fixed-menu">
@@ -106,15 +150,19 @@
                         <a class="nav-link scroll" href="#features">Features</a>
                      </li>
                   </ul>
-                  <ul class="navbar-nav ml-auto padd_bot">
+                  <ul class="navbar-nav ml-left padd_bot">
                      <li class="nav-item">
                         <a class="nav-link scroll" href="#pricing">Pricing</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link scroll" href="#account">Account</a>
+                        <a class="nav-link scroll" href="#contact">Contact us</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link scroll" href="#contact">Contact us</a>
+                        <div class="header-cart-wrap_hny12" id="headerCartWrap">
+
+                           <div id='google_translate_element'></div>
+
+                        </div>
                      </li>
                   </ul>
                </div>
@@ -122,3 +170,21 @@
          </nav>
       </header>
       <!-- Header Section End -->
+
+      <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+      <script>
+         function googleTranslateElementInit() {
+
+            new google.translate.TranslateElement({
+
+               pageLanguage: 'en',
+
+               includedLanguages: 'en,zh-CN,hr,fr,de,hi,id,it,ja,ko,no,pl,pt,ru,es,sv,uz',
+
+               autoDisplay: false
+
+            }, 'google_translate_element');
+
+         }
+      </script>

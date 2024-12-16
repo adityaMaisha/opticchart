@@ -196,13 +196,57 @@
 
    <!--wow Transitions-->
 
+   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
    <script src="js/wow.min.js"></script>
 
-
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
    <!-- Custom JavaScript -->
 
    <script src="js/script.js"></script>
+
+   <script>
+      $('.test-container-slider').slick({
+   dots: false,
+   infinite: true,
+   fade: true,
+   cssEase: 'linear',
+   arrows: true,
+   autoplay: true,
+   speed: 300,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   prevArrow: $('.prev-button'),
+   nextArrow :  $('.next-button'),
+   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+   </script>
 
 </body>
 

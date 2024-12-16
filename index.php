@@ -20,6 +20,8 @@
       position: relative;
 
       overflow: hidden;
+      display: flex;
+      justify-content: center;
 
    }
 
@@ -28,8 +30,8 @@
    .display-tv {
 
       position: absolute;
-      width: 490px;
-      height: 95%;
+      width: 492px;
+      height: 100%;
       z-index: 2;
 
    }
@@ -38,12 +40,12 @@
 
    .display-video {
       position: absolute;
-      width: 63%;
-      height: 67%;
-      top: 23px;
-      left: 85px;
-      object-fit: cover;
-      z-index: 1;
+    width: 66%;
+    height: 67%;
+    top: 35px;
+    left: 77px;
+    object-fit: cover;
+    z-index: 1;
    }
 
 
@@ -460,11 +462,93 @@
    .brand-logo {
       padding-left: 15px;
    }
-   .about-inner-image img{
+
+   .about-inner-image img {
       border: 9px solid #51afb7;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 18px 7px #dadada;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 18px 7px #dadada;
+   }
+
+   .test-container {
+      padding: 2rem 0;
+      display: flex;
+      align-items: center;
+   }
+
+   .test-container.slick-slide {
+      display: flex;
+   }
+
+   .test-img img {
+      width: 100%;
+   }
+
+   .slick-button-container {
+      opacity: 1;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+   }
+
+   .font-left,
+   .font-right {
+      font-size: 1.5rem;
+      color: #51afb7;
+      border: 1px solid #51afb7;
+      padding: 10px 15px;
+      border-radius: 50%;
+   }
+
+   .pos-rel {
+      position: relative;
+   }
+
+   .video-container {
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+   }
+
+   .video-container::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #00000066;
+      z-index: 1;
+   }
+
+   .video-main{
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+   }
+   .video-main video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   .video-content{
+      position: relative;
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      z-index: 1;
+   }
+   .video-inner-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
    }
 </style>
 
@@ -1045,20 +1129,20 @@
             </li>
 
 
-   <!-- +++++++++++++++++ Commenting out for the time being ++++++++++++++++++ -->
+            <!-- +++++++++++++++++ Commenting out for the time being ++++++++++++++++++ -->
             <!-- <li data-index="rs-967" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="../../assets/images/night-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-beforeafter='{"moveto":"50%|50%|50%|50%","bgColor":"","bgType":"image","bgImage":"images/slide6.jpg","bgFit":"cover","bgPos":"center center","bgRepeat":"no-repeat","direction":"horizontal","easing":"Power2.easeInOut","delay":"500","time":"750","out":"fade","carousel":false}'> -->
 
-               <!-- MAIN IMAGE -->
+            <!-- MAIN IMAGE -->
 
-               <!-- <img src="images/slide5.png" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" class="rev-slidebg" data-no-retina=""> -->
+            <!-- <img src="images/slide5.png" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power4.easeOut" data-scalestart="150" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-blurstart="30" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="off" class="rev-slidebg" data-no-retina=""> -->
 
-               <!-- LAYERS -->
+            <!-- LAYERS -->
 
 
 
-               <!-- LAYER NR. 3 -->
+            <!-- LAYER NR. 3 -->
 
-               <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-964-layer-28"
+            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-964-layer-28"
 
                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 
@@ -1082,7 +1166,7 @@
 
 
 
-               <!-- <div class="tp-caption main-slider-text padding-top-35 fontface-one text-color-white  tp-resizeme  tp-blackshadow rs-parallaxlevel-5"
+            <!-- <div class="tp-caption main-slider-text padding-top-35 fontface-one text-color-white  tp-resizeme  tp-blackshadow rs-parallaxlevel-5"
 
                   id="slide-994-layer-999" data-x="['center','center','center','center']"
 
@@ -1104,9 +1188,9 @@
 
 
 
-               <!-- LAYER NR. 6 -->
+            <!-- LAYER NR. 6 -->
 
-               <!-- <div class="tp-caption   tp-resizeme  tp-whiteshadow rs-parallaxlevel-5" id="slide-964-layer-1743"
+            <!-- <div class="tp-caption   tp-resizeme  tp-whiteshadow rs-parallaxlevel-5" id="slide-964-layer-1743"
 
                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 
@@ -1132,9 +1216,9 @@
  -->
 
 
-               <!-- LAYER NR. 7 -->
+            <!-- LAYER NR. 7 -->
 
-               <!-- <div class="tp-caption padding-top-10 main-slider-detail-text tp-resizeme rs-parallaxlevel-5"
+            <!-- <div class="tp-caption padding-top-10 main-slider-detail-text tp-resizeme rs-parallaxlevel-5"
 
                   id="slide-964-layer-48" data-x="['center','center','center','center']"
 
@@ -1160,9 +1244,9 @@
 
 
 
-               <!-- LAYER NR. 8 -->
+            <!-- LAYER NR. 8 -->
 
-               <!-- <div
+            <!-- <div
 
                   class="tp-caption background-white button-setting button-setting-primary text-color-dark tp-resizeme rs-parallaxlevel-4"
 
@@ -1190,9 +1274,9 @@
 
 
 
-               <!-- LAYER NR. 10 -->
+            <!-- LAYER NR. 10 -->
 
-               <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-4" id="slide-964-layer-42"
+            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-4" id="slide-964-layer-42"
 
                   data-x="['center','center','center','center']" data-hoffset="['545','545','545','181']"
 
@@ -1216,9 +1300,9 @@
 
 
 
-               <!-- LAYER NR. 11 -->
+            <!-- LAYER NR. 11 -->
 
-               <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-964-layer-45"
+            <!-- <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-964-layer-45"
 
                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 
@@ -1246,7 +1330,7 @@
 
 
 
-               <!-- <div
+            <!-- <div
 
                   class="tp-caption main-slider-text padding-top-35 fontface-one text-color-dark  tp-resizeme  tp-blackshadow rs-parallaxlevel-5"
 
@@ -1268,9 +1352,9 @@
 
                   Precision You Can <br> Trust</div> -->
 
-               <!-- LAYER NR. 13 -->
+            <!-- LAYER NR. 13 -->
 
-               <!-- <div class="tp-caption main-slider-detail-text tp-resizeme rs-parallaxlevel-5"
+            <!-- <div class="tp-caption main-slider-detail-text tp-resizeme rs-parallaxlevel-5"
 
                   id="slide-964-layer-49" data-x="['center','center','center','center']"
 
@@ -1296,9 +1380,9 @@
 
 
 
-               <!-- LAYER NR. 14 -->
+            <!-- LAYER NR. 14 -->
 
-               <!-- <div
+            <!-- <div
 
                   class="tp-caption button-setting background-secondary button-setting-primary  tp-resizeme rs-parallaxlevel-4"
 
@@ -1883,7 +1967,26 @@
 <!-- /About Company Section End -->
 
 
+<div class="video-container container-fluid">
+   <div class="video-main">
+      <video src="images/background.mp4" autoplay muted loop></video>
+   </div>
+   <div class="container video-inner-container">
+      <div class="row align-items-center">
+         <div class="col-lg-12">
+            <div class="video-content">
+               <div class="section-title">
+                  <p class="paragraph-18 fontface-two font-weight-300 text-color-white padding-bottom-25 wow fadeInLeft" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">Revolutionizing eye care with advanced software solutions.</p>
 
+                  <h2 class="text-color-white fontface-one padding-bottom-35 wow fadeInLeft" data-wow-delay="350ms" style="visibility: visible; animation-delay: 350ms; animation-name: fadeInLeft;">Clear Vision, <span class="font-weight-700 ">Accurate Results</span></h2>
+
+                  <p class="text-color-white fontface-two paragraph-23 padding-bottom-45 wow fadeInLeft" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInLeft;">Optic Chart ® offers cutting-edge eye testing software designed to deliver accurate, efficient results for comprehensive vision assessments.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
 
 
 
@@ -1926,7 +2029,7 @@
 
 <section class="company-portfolio-section padding-top-bottom" id="features">
 
-   <div class="container">
+   <div class="container pos-rel">
 
       <div class="section-heading">
 
@@ -1936,210 +2039,40 @@
 
                <p class="fontface-two text-color-secondary paragraph-20 padding-bottom-25">Comprehensive Eye Tests</p>
 
-               <h2 class="fontface-one text-color-dark padding-bottom-35">Advanced Methods for <span class="text-color-dark font-weight-700 ">Accurate Vision AssessmentWork</span></h2>
+               <h2 class="fontface-one text-color-dark padding-bottom-35">Advanced Vision Assessment Methods</h2>
 
             </div>
 
-            <div class="col-md-12">
-
-               <!-- <div id="js-filters-mosaic" class="cbp-l-filters-button wow fadeInUp" data-wow-delay="350ms">
-
-                  <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All</div>
-
-                  <div class="cbp-divider"> |</div>
-
-                  <div data-filter=".print" class="cbp-filter-item">Print</div>
-
-                  <div class="cbp-divider">|</div>
-
-                  <div data-filter=".web-design" class="cbp-filter-item">Web Design</div>
-
-                  <div class="cbp-divider"> |</div>
-
-                  <div data-filter=".motion" class="cbp-filter-item"> Motion</div>
-
-                  <div class="cbp-divider"> |</div>
-
-                  <div data-filter=".graphic" class="cbp-filter-item">Graphic</div>
-
-               </div> -->
-
-
-
-               <div id="js-grid-mosaic" class="cbp cbp-l-grid-mosaic">
-
-                  <div class="cbp-item graphic">
-
-                     <a href="images/etdrs-chart.png" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-
-                        <div class="cbp-caption-defaultWrap">
-
-                           <img src="images/etdrs-chart.png" alt="">
-
-                        </div>
-
-                        <div class="cbp-caption-activeWrap portfolio-hover-effect"></div>
-
-                     </a>
-
-                     <h3 class="fontface-one font-weight-500 portfolio-heading-text padding-top-30 padding-bottom-15">ETDRS CHART</h3>
-
-                     <p class="fontface-two paragraph-18 font-weight-500 portfolio-detail-text">With ETDRS convertion unity</p>
-
+            <div class="container row test-container-slider">
+               <div class="col-lg-12 test-container">
+                  <div class="col-lg-6 test-img">
+                     <img src="images/test-1.png" alt="">
                   </div>
-
-
-
-                  <div class="cbp-item motion">
-
-                     <a href="images/green-red.png" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-
-                        <div class="cbp-caption-defaultWrap">
-
-                           <img src="images/green-red.png" alt="">
-
-                        </div>
-
-                        <div class="cbp-caption-activeWrap portfolio-hover-effect"></div>
-
-                     </a>
-
-                     <h3 class="fontface-one font-weight-500 portfolio-heading-text padding-top-30 padding-bottom-15">RED GREEN TEST</h3>
-
-                     <p class="fontface-two paragraph-18 font-weight-500 portfolio-detail-text">Refine Eyeglass prescription.</p>
-
+                  <div class="col-lg-6">
+                     <h2 class="text-color-secondary padding-bottom-30">First Test</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque possimus incidunt assumenda, autem nostrum!</p>
                   </div>
-
-
-
-                  <div class="cbp-item print web-design">
-
-                     <a href="images/dots.png" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-
-                        <div class="cbp-caption-defaultWrap">
-
-                           <img src="images/dots.png" alt="">
-
-                        </div>
-
-                        <div class="cbp-caption-activeWrap portfolio-hover-effect"></div>
-
-                     </a>
-
-                     <h3 class="fontface-one font-weight-500 portfolio-heading-text padding-top-30 padding-bottom-15">WORTH 4 DOT TEST</h3>
-
-                     <p class="fontface-two paragraph-18 font-weight-500 portfolio-detail-text">Assess degree of binocular vision</p>
-
-                  </div>
-
-
-
-                  <div class="cbp-item web-design">
-
-                     <a href="images/colorblind.png" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-
-                        <div class="cbp-caption-defaultWrap">
-
-                           <img src="images/colorblind.png" alt="">
-
-                        </div>
-
-                        <div class="cbp-caption-activeWrap portfolio-hover-effect"></div>
-
-                     </a>
-
-                     <h3 class="fontface-one font-weight-500 portfolio-heading-text padding-top-30 padding-bottom-15">Color vision test</h3>
-
-                     <p class="fontface-two paragraph-18 font-weight-500 portfolio-detail-text">All 36 colored plates</p>
-
-                  </div>
-
-                  <!-- 
-
-                  <div class="cbp-item print">
-
-                     <a href="images/portfolio-6.jpg" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-
-                        <div class="cbp-caption-defaultWrap">
-
-                           <img src="images/portfolio-6.jpg" alt="">
-
-                        </div>
-
-                        <div class="cbp-caption-activeWrap portfolio-hover-effect"><i class="ti-zoom-in"></i></div>
-
-                     </a>
-
-                     <h3 class="fontface-one font-weight-500 portfolio-heading-text padding-top-30 padding-bottom-15">SEO Work</h3>
-
-                     <p class="fontface-two paragraph-18 font-weight-500 portfolio-detail-text">Some SEO Ideas</p>
-
-                  </div> -->
-
-
-
-                  <div class="cbp-item graphic">
-
-                     <a href="images/astigmatic.png" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-
-                        <div class="cbp-caption-defaultWrap">
-
-                           <img src="images/astigmatic.png" alt="">
-
-                        </div>
-
-                        <div class="cbp-caption-activeWrap portfolio-hover-effect"></div>
-
-                     </a>
-
-                     <h3 class="fontface-one font-weight-500 portfolio-heading-text padding-top-30 padding-bottom-15">ASTIGMATIC TESTS</h3>
-
-                     <p class="fontface-two paragraph-18 font-weight-500 portfolio-detail-text">Many dial astigmatic tests</p>
-
-                  </div>
-
-
-
-                  <div class="cbp-item motion">
-
-                     <a href="images/figure.png" class="cbp-caption cbp-lightbox" data-title="Workout Buddy<br>by Tiberiu Neamu">
-
-                        <div class="cbp-caption-defaultWrap">
-
-                           <img src="images/figure.png" alt="">
-
-                        </div>
-
-                        <div class="cbp-caption-activeWrap portfolio-hover-effect"></div>
-
-                     </a>
-
-                     <h3 class="fontface-one font-weight-500 portfolio-heading-text padding-top-30 padding-bottom-15">Figures</h3>
-
-                     <p class="fontface-two paragraph-18 font-weight-500 portfolio-detail-text">Easely discernible figures for kids</p>
-
-                  </div>
-
                </div>
 
-
-
-               <!-- <div id="js-loadMore-lightbox-gallery" class="cbp-l-loadMore-button wow fadeInUp" data-wow-delay="650ms">
-
-                  <a href="portfolio-loadfile/index.php" class="cbp-l-loadMore-link button-setting button-setting-primary background-secondary text-color-white" rel="nofollow">
-
-                     <span class="cbp-l-loadMore-defaultText">Load More</span>
-
-                     <span class="cbp-l-loadMore-loadingText">Loading...</span>
-
-                     <span class="cbp-l-loadMore-noMoreLoading">No More Works</span>
-
-                  </a>
-
-               </div> -->
+               <div class="col-lg-12 test-container">
+                  <div class="col-lg-6 test-img">
+                     <img src="images/test-1.png" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                     <h2 class="text-color-secondary padding-bottom-30">Second Test</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque possimus incidunt assumenda, autem nostrum!</p>
+                  </div>
+               </div>
 
             </div>
-
+            <div class="slick-button-container">
+               <div class="prev-button slick-prev">
+                  <i class="fas fa-chevron-left font-left"></i>
+               </div>
+               <div class="next-button slick-next">
+                  <i class="fas fa-chevron-right font-right"></i>
+               </div>
+            </div>
          </div>
 
       </div>
@@ -2377,6 +2310,41 @@
 </section>
 
 <!-- Company Stats Information End -->
+
+<section class="company-portfolio-section padding-top-bottom" id="features">
+
+   <div class="container pos-rel">
+
+      <div class="section-heading">
+
+         <div class="row">
+
+            <div class="col-lg-6 wow fadeInUp pad-bottom" data-wow-delay="300ms">
+
+               <p class="fontface-two text-color-secondary paragraph-20 padding-bottom-25">Comprehensive Eye Tests</p>
+
+               <h2 class="fontface-one text-color-dark padding-bottom-35">Advanced Vision Assessment Methods</h2>
+
+            </div>
+
+            <div class="container row distance-section">
+               <div class="col-lg-12 test-container">
+                  <div class="col-lg-6 test-img">
+                     <img src="images/distance.jpg" alt="">
+                  </div>
+                  <div class="col-lg-6">
+                     <h2 class="text-color-secondary padding-bottom-30">First Test</h2>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cumque possimus incidunt assumenda, autem nostrum!</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
 
 
 <!-- Exhibition Section  -->
